@@ -1,6 +1,4 @@
-/* =========================
-   CONFIGURAÇÕES GERAIS
-========================= */
+/* CONFIGURAÇÕES GERAIS */
 
 * {
     margin: 0;
@@ -8,23 +6,17 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff8ed;
-    color: #333;
+    background-color: #06245c;
+    color: white;
 }
 
 
-/* =========================
-   CABEÇALHO
-========================= */
+/* CABEÇALHO */
 
 .cabecalho {
-    background: linear-gradient(135deg, #0843a2, #2878d4);
+    background-color: #031b45;
     color: white;
 }
 
@@ -53,6 +45,9 @@ body {
     flex: 1;
 }
 
+
+/* ÍCONES DO CABEÇALHO */
+
 .sociais {
     display: flex;
     gap: 12px;
@@ -62,21 +57,13 @@ body {
     width: 42px;
     height: 42px;
     object-fit: contain;
-
-    transition: transform 0.2s;
-}
-
-.sociais img:hover {
-    transform: scale(1.15);
 }
 
 
-/* =========================
-   MENU
-========================= */
+/* MENU */
 
 .menu {
-    background-color: #06347e;
+    background-color: #021333;
 
     display: flex;
     justify-content: center;
@@ -85,13 +72,10 @@ body {
     gap: 10px;
 
     padding: 14px 20px;
-
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .menu a {
     color: white;
-
     text-decoration: none;
 
     font-size: 17px;
@@ -101,20 +85,16 @@ body {
 
     border-radius: 8px;
 
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
 .menu a:hover {
     background-color: #faae43;
-    color: #06347e;
-
-    transform: translateY(-2px);
+    color: #06245c;
 }
 
 
-/* =========================
-   BANNER
-========================= */
+/* BANNER */
 
 .banner {
     width: 100%;
@@ -122,18 +102,16 @@ body {
 }
 
 .banner img {
-    display: block;
-
     width: 100%;
     max-height: 400px;
+
+    display: block;
 
     object-fit: cover;
 }
 
 
-/* =========================
-   SEÇÃO DE PESSOAS
-========================= */
+/* SEÇÃO DAS PESSOAS */
 
 .pessoas {
     max-width: 1200px;
@@ -144,9 +122,9 @@ body {
 }
 
 .pessoas h2 {
-    text-align: center;
+    color: white;
 
-    color: #0843a2;
+    text-align: center;
 
     font-size: 32px;
 
@@ -154,9 +132,7 @@ body {
 }
 
 
-/* =========================
-   CARDS
-========================= */
+/* CARDS */
 
 .cards {
     display: grid;
@@ -169,75 +145,54 @@ body {
 .card {
     background-color: white;
 
+    color: #333;
+
     border-radius: 15px;
 
     padding: 18px;
 
     text-align: center;
 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 
-    transition: all 0.3s ease;
-
-    overflow: hidden;
+    transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-7px);
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
+
+
+/* FOTOS */
 
 .foto {
     width: 100%;
-    height: 240px;
+
+    height: 250px;
 
     object-fit: cover;
 
     border-radius: 10px;
 }
 
+
+/* NOME DAS PESSOAS */
+
 .card h3 {
-    color: #0843a2;
+    color: #06245c;
 
-    font-size: 20px;
+    font-size: 21px;
 
-    margin: 15px 0;
+    margin-top: 15px;
 }
 
 
-/* =========================
-   ÍCONES DOS CARDS
-========================= */
-
-.icones {
-    display: flex;
-
-    justify-content: center;
-
-    gap: 10px;
-}
-
-.icones img {
-    width: 38px;
-    height: 38px;
-
-    object-fit: contain;
-
-    transition: transform 0.2s;
-}
-
-.icones img:hover {
-    transform: scale(1.2);
-}
-
-
-/* =========================
-   RODAPÉ
-========================= */
+/* RODAPÉ */
 
 footer {
-    background: linear-gradient(135deg, #40a2e3, #7fc2ef);
+    background-color: #031b45;
 
     color: white;
 
@@ -262,30 +217,25 @@ footer h2 {
 }
 
 footer a {
-    display: inline-block;
-
     color: white;
 
     font-size: 20px;
+
     font-weight: bold;
 
     text-decoration: none;
-
-    margin-bottom: 25px;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #faae43;
 }
 
 footer p {
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 
-/* =========================
-   CELULAR
-========================= */
+/* CELULAR */
 
 @media (max-width: 768px) {
 
@@ -293,43 +243,20 @@ footer p {
         flex-direction: column;
 
         gap: 15px;
-
-        padding: 25px 15px;
     }
 
     .cabecalho h1 {
         font-size: 30px;
     }
 
-    .logo {
-        width: 70px;
-        height: 70px;
-    }
-
     .menu {
         flex-wrap: wrap;
-
-        gap: 5px;
-
-        padding: 10px;
     }
 
     .menu a {
         font-size: 14px;
 
         padding: 8px 10px;
-    }
-
-    .banner img {
-        height: 220px;
-    }
-
-    .pessoas {
-        padding: 40px 15px;
-    }
-
-    .pessoas h2 {
-        font-size: 26px;
     }
 
     .cards {
@@ -342,9 +269,7 @@ footer p {
 }
 
 
-/* =========================
-   TABLET
-========================= */
+/* TABLET */
 
 @media (min-width: 769px) and (max-width: 1000px) {
 
