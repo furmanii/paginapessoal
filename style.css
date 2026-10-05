@@ -101,3 +101,24 @@ color:#7FC2EF
 text-align: center;
 margin-bottom: 15px;
 }
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #06347e;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #faae43;
+}
