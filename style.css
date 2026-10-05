@@ -1,4 +1,6 @@
-/* CONFIGURAÇÕES GERAIS */
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
 
 * {
     margin: 0;
@@ -13,159 +15,166 @@ body {
 }
 
 
-/* CABEÇALHO */
+/* =========================
+   CABEÇALHO
+========================= */
 
 .cabecalho {
-    background-color: #031b45;
-    color: white;
+    background-color: #06347e;
 }
 
 .cabecalho-conteudo {
-    max-width: 1200px;
-    margin: auto;
-
-    min-height: 150px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 20px;
+    padding: 20px 40px;
+
+    min-height: 130px;
 }
 
 .logo {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
+
     object-fit: contain;
 }
 
 .cabecalho h1 {
-    font-size: 38px;
-    text-align: center;
     flex: 1;
+
+    text-align: center;
+
+    font-size: 35px;
+
+    color: white;
 }
 
 
-/* ÍCONES DO CABEÇALHO */
+/* =========================
+   ÍCONES DO CABEÇALHO
+========================= */
 
 .sociais {
     display: flex;
-    gap: 12px;
+
+    gap: 10px;
 }
 
 .sociais img {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
+
     object-fit: contain;
 }
 
 
-/* MENU */
+/* =========================
+   MENU
+========================= */
 
 .menu {
-    background-color: #021333;
+    width: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    gap: 10px;
+    gap: 35px;
 
-    padding: 14px 20px;
+    padding: 15px;
+
+    background-color: #04285f;
 }
 
 .menu a {
     color: white;
+
     text-decoration: none;
 
     font-size: 17px;
+
     font-weight: bold;
-
-    padding: 10px 18px;
-
-    border-radius: 8px;
-
-    transition: 0.3s;
 }
 
 .menu a:hover {
-    background-color: #faae43;
-    color: #06245c;
+    color: #faae43;
 }
 
 
-/* BANNER */
+/* =========================
+   BANNER
+========================= */
 
 .banner {
     width: 100%;
-    overflow: hidden;
 }
 
 .banner img {
     width: 100%;
-    max-height: 400px;
 
     display: block;
+
+    max-height: 400px;
 
     object-fit: cover;
 }
 
 
-/* SEÇÃO DAS PESSOAS */
+/* =========================
+   SEÇÃO DOS CARDS
+========================= */
 
 .pessoas {
     max-width: 1200px;
 
-    margin: auto;
+    margin: 0 auto;
 
-    padding: 60px 20px;
+    padding: 50px 20px;
 }
 
 .pessoas h2 {
-    color: white;
-
     text-align: center;
 
-    font-size: 32px;
+    color: white;
 
-    margin-bottom: 40px;
+    font-size: 30px;
+
+    margin-bottom: 35px;
 }
 
 
-/* CARDS */
+/* =========================
+   CARDS LADO A LADO
+========================= */
 
 .cards {
-    display: grid;
+    display: flex;
 
-    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
 
-    gap: 30px;
+    align-items: stretch;
+
+    gap: 25px;
+
+    width: 100%;
 }
 
 .card {
+    flex: 1;
+
+    max-width: 350px;
+
     background-color: white;
 
     color: #333;
 
-    border-radius: 15px;
+    padding: 15px;
 
-    padding: 18px;
+    border-radius: 10px;
 
     text-align: center;
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-
-    transition: 0.3s;
 }
-
-.card:hover {
-    transform: translateY(-7px);
-
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-}
-
-
-/* FOTOS */
 
 .foto {
     width: 100%;
@@ -174,42 +183,41 @@ body {
 
     object-fit: cover;
 
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
-
-/* NOME DAS PESSOAS */
-
 .card h3 {
-    color: #06245c;
+    color: #06347e;
 
-    font-size: 21px;
+    font-size: 20px;
 
     margin-top: 15px;
 }
 
 
-/* RODAPÉ */
+/* =========================
+   RODAPÉ
+========================= */
 
 footer {
-    background-color: #031b45;
+    background-color: #06347e;
 
     color: white;
 
     text-align: center;
 
-    padding: 40px 20px;
+    padding: 35px 20px;
 
     margin-top: 30px;
 }
 
 .logo-footer {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
 
     object-fit: contain;
 
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 footer h2 {
@@ -219,15 +227,9 @@ footer h2 {
 footer a {
     color: white;
 
-    font-size: 20px;
-
-    font-weight: bold;
-
     text-decoration: none;
-}
 
-footer a:hover {
-    color: #faae43;
+    font-size: 18px;
 }
 
 footer p {
@@ -235,7 +237,9 @@ footer p {
 }
 
 
-/* CELULAR */
+/* =========================
+   CELULAR
+========================= */
 
 @media (max-width: 768px) {
 
@@ -243,38 +247,34 @@ footer p {
         flex-direction: column;
 
         gap: 15px;
+
+        padding: 20px;
     }
 
     .cabecalho h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .menu {
+        gap: 10px;
+
         flex-wrap: wrap;
     }
 
     .menu a {
         font-size: 14px;
-
-        padding: 8px 10px;
     }
 
     .cards {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+
+        align-items: center;
     }
 
-    .foto {
-        height: 280px;
-    }
-}
+    .card {
+        width: 100%;
 
-
-/* TABLET */
-
-@media (min-width: 769px) and (max-width: 1000px) {
-
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
+        max-width: 400px;
     }
 
 }
