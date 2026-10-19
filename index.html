@@ -79,3 +79,109 @@
 
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Certificados</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 30px 20px;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      color: #26374a;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .descricao {
+      text-align: center;
+      margin-bottom: 35px;
+      color: #586779;
+    }
+
+    .certificados {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px #00000012;
+    }
+
+    .card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      cursor: zoom-in;
+    }
+
+    .card h2 {
+      font-size: 17px;
+      line-height: 1.4;
+      margin-bottom: 0;
+    }
+
+    .card a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .card a:hover h2 {
+      color: #167b9b;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Meus Certificados</h1>
+  <p class="descricao">
+    Confira os cursos que concluí na área de tecnologia.
+  </p>
+
+  <main class="certificados">
+    <article class="card">
+      <a href="img/certificado1.jpeg" target="_blank">
+        <img src="img/certificado1.jpeg"
+             alt="Certificado HTML5 e CSS3 Parte 1">
+        <h2>HTML5 e CSS3 Parte 1: Crie uma Página da Web</h2>
+      </a>
+    </article>
+
+    <article class="card">
+      <a href="img/certificado2.jpeg" target="_blank">
+        <img src="img/certificado2.jpeg"
+             alt="Certificado HTML5 e CSS3 Parte 2">
+        <h2>HTML5 e CSS3 Parte 2: Posicionamento, Listas e Navegação</h2>
+      </a>
+    </article>
+
+    <article class="card">
+      <a href="img/certificado3.jpeg" target="_blank">
+        <img src="img/certificado3.jpeg"
+             alt="Certificado HTML5 e CSS3 Parte 3">
+        <h2>HTML5 e CSS3 Parte 3: Formulários e Tabelas</h2>
+      </a>
+    </article>
+  </main>
+</body>
+</html>
