@@ -1,3 +1,4 @@
+
 /* =========================
    CONFIGURAÇÕES GERAIS
 ========================= */
@@ -20,18 +21,20 @@ body {
 ========================= */
 
 .cabecalho {
-    width: 100%;
     background-color: #06347e;
+    color: white;
+    width: 100%;
 }
 
 .cabecalho-conteudo {
+    max-width: 1980px;
     min-height: 130px;
+    margin: 0 auto;
+    padding: 20px 40px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    padding: 20px 40px;
 }
 
 .logo {
@@ -42,21 +45,20 @@ body {
 
 .cabecalho h1 {
     flex: 1;
-
     text-align: center;
-
     color: white;
-
     font-size: 36px;
 }
 
 
 /* =========================
-   ÍCONES DO CABEÇALHO
+   ÍCONES SOCIAIS
 ========================= */
 
 .sociais {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
     gap: 10px;
 }
 
@@ -73,26 +75,20 @@ body {
 
 .menu {
     width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-    gap: 30px;
-
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 14px;
-
     background-color: #04285f;
 }
 
 .menu a {
     color: white;
-
     text-decoration: none;
-
     font-size: 17px;
     font-weight: bold;
-
     padding: 8px 12px;
 }
 
@@ -102,118 +98,91 @@ body {
 
 
 /* =========================
-   BANNER
+   BANNER PRINCIPAL
 ========================= */
 
 .banner {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .banner img {
-    width: 100%;
-
-    height: 350px;
-
     display: block;
-
+    width: 100%;
+    height: 350px;
     object-fit: cover;
 }
 
 
 /* =========================
-   SEÇÃO
+   SEÇÃO DAS PESSOAS
 ========================= */
 
 .pessoas {
-    max-width: 1150px;
-
-    margin: 0 auto;
-
-    padding: 45px 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: -25px auto 0;
+    padding: 25px 20px 40px;
+    text-align: center;
 }
 
+.pessoas-titulo,
 .pessoas h2 {
-    text-align: center;
-
     color: white;
-
+    text-align: center;
     font-size: 30px;
-
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 
 /* =========================
-   CARDS
+   CARTÕES DAS FOTOS
 ========================= */
 
 .cards {
     display: flex;
-
     justify-content: center;
-
     align-items: stretch;
-
-    gap: 25px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 
-/* CARD INDIVIDUAL */
+/* Cartão individual */
 
-.card {
-    width: 31%;
-
-    background-color: white;
-
-    color: #333;
-
+.pessoas .card {
+    width: 260px;
     padding: 15px;
-
-    border-radius: 10px;
-
+    background-color: white;
+    color: #333;
     text-align: center;
-
+    border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 
 /* =========================
-   FOTOS MENORES
+   FOTOS
 ========================= */
 
-.foto {
-    width: 100%;
-
-    height: 210px;
-
+.pessoas .foto {
     display: block;
-
+    width: 100%;
+    height: 260px;
     object-fit: cover;
-
     border-radius: 7px;
 }
 
 
 /* =========================
-   NOME
+   NOMES DAS FOTOS
 ========================= */
 
-.card h3 {
+.pessoas .card h3 {
     color: #06347e;
-
-    font-size: 20px;
-
+    font-size: 18px;
     margin-top: 12px;
-}
-
-
-/* =========================
-   REMOVE QUALQUER ÍCONE
-   DOS CARDS
-========================= */
-
-.card .icones {
-    display: none;
 }
 
 
@@ -223,37 +192,35 @@ body {
 
 footer {
     width: 100%;
-
     background-color: #06347e;
-
     color: white;
-
     text-align: center;
-
-    padding: 35px 20px;
-
-    margin-top: 20px;
+    padding: 30px 20px;
+    margin-top: 10px;
 }
 
 .logo-footer {
     width: 70px;
     height: 70px;
-
     object-fit: contain;
-
     margin-bottom: 10px;
 }
 
 footer h2 {
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 12px;
 }
 
 footer a {
+    display: inline-block;
     color: white;
-
     text-decoration: none;
-
     font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer a:hover {
+    color: #faae43;
 }
 
 footer p {
@@ -262,90 +229,22 @@ footer p {
 
 
 /* =========================
-   TABLET
+   PÁGINA SOBRE MIM
 ========================= */
 
-@media (max-width: 900px) {
-
-    .cards {
-        gap: 15px;
-    }
-
-    .card {
-        width: 32%;
-    }
-
-    .foto {
-        height: 190px;
-    }
-
-}
-
-
-/* =========================
-   CELULAR
-========================= */
-
-@media (max-width: 700px) {
-
-    .cabecalho-conteudo {
-        flex-direction: column;
-
-        gap: 15px;
-
-        padding: 20px;
-    }
-
-    .cabecalho h1 {
-        font-size: 28px;
-    }
-
-    .menu {
-        flex-wrap: wrap;
-
-        gap: 5px;
-    }
-
-    .menu a {
-        font-size: 14px;
-    }
-
-    .banner img {
-        height: 220px;
-    }
-
-    .cards {
-        flex-direction: column;
-
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-
-        max-width: 350px;
-    }
-
-    .foto {
-        height: 220px;
-    }
-
-}
-
-/* Texto da página sobre mim */
 .sobre {
     padding: 60px 20px;
     text-align: center;
 }
 
 .sobre h2 {
-    font-family: 'Georgia', serif;
+    font-family: Georgia, serif;
     font-size: 36px;
     margin-bottom: 30px;
 }
 
 .sobre p {
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
     font-size: 22px;
     line-height: 1.8;
     max-width: 850px;
@@ -353,7 +252,11 @@ footer p {
     text-align: center;
 }
 
-/* Seção da música */
+
+/* =========================
+   SEÇÃO DA MÚSICA
+========================= */
+
 .musica {
     padding: 40px 20px;
     text-align: center;
@@ -366,12 +269,13 @@ footer p {
 }
 
 .musica p {
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
     font-size: 20px;
     margin-bottom: 25px;
 }
 
 .video {
+    width: 100%;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -381,4 +285,146 @@ footer p {
     aspect-ratio: 16 / 9;
     border: none;
     border-radius: 12px;
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 900px) {
+
+    .cabecalho-conteudo {
+        padding: 20px;
+    }
+
+    .cabecalho h1 {
+        font-size: 30px;
+    }
+
+    .cards {
+        gap: 15px;
+    }
+
+    .pessoas .card {
+        width: 220px;
+    }
+
+    .pessoas .foto {
+        height: 220px;
+    }
+
+    .banner img {
+        height: 280px;
+    }
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    .cabecalho-conteudo {
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        padding: 20px 10px;
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .cabecalho h1 {
+        flex: none;
+        font-size: 27px;
+    }
+
+    .sociais {
+        justify-content: center;
+    }
+
+    .sociais img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .menu {
+        gap: 4px;
+        padding: 10px 5px;
+    }
+
+    .menu a {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .banner img {
+        height: 220px;
+    }
+
+    .pessoas {
+        margin-top: -15px;
+        padding: 20px 10px 30px;
+    }
+
+    .pessoas-titulo,
+    .pessoas h2 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .cards {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .pessoas .card {
+        width: calc(50% - 6px);
+        padding: 8px;
+    }
+
+    .pessoas .foto {
+        height: 180px;
+    }
+
+    .pessoas .card h3 {
+        font-size: 15px;
+        margin-top: 8px;
+    }
+
+    footer {
+        padding: 25px 12px;
+    }
+
+    footer h2 {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+    .sobre {
+        padding: 35px 15px;
+    }
+
+    .sobre h2 {
+        font-size: 29px;
+    }
+
+    .sobre p {
+        font-size: 18px;
+    }
+
+    .musica h2 {
+        font-size: 26px;
+    }
+
+    .musica p {
+        font-size: 17px;
+    }
 }

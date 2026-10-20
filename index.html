@@ -5,149 +5,161 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Isabella Furman</title>
 <link rel="stylesheet" href="style.css">
+
+<style>
+/* Seção das pessoas favoritas */
+.pessoas {
+  margin-top: -35px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.pessoas-titulo {
+  text-align: center;
+}
+
+/* Organização dos cartões */
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px 20px;
+}
+
+/* Cartões das fotos */
+.pessoas .card {
+  width: 260px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Imagens das pessoas */
+.pessoas .foto {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Ajustes para celular */
+@media (max-width: 600px) {
+  .pessoas {
+    margin-top: -20px;
+  }
+
+  .cards {
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .pessoas .card {
+    width: calc(50% - 10px);
+  }
+
+  .pessoas .foto {
+    height: 210px;
+  }
+}
+</style>
 </head>
+
 <body>
 
 <!-- Cabeçalho da página -->
 <header class="cabecalho">
-<div class="cabecalho-conteudo">
-<img class="logo" src="mulher.png" alt="Logo">
-<h1>Isabella Furman</h1>
+  <div class="cabecalho-conteudo">
 
-<div class="sociais">
-<img src="gato.png" alt="WhatsApp">
-<img src="brilha.png" alt="Facebook">
-<img src="flor.png" alt="Instagram">
-</div>
-</div>
+    <img class="logo" src="mulher.png" alt="Logo da página">
 
-<!-- Menu de navegação do site -->
-<nav class="menu">
-<a href="index.html">Inicial</a>
-<a href="sobre.html">Sobre</a>
-<a href="contato.html">Contato</a>
-<a href="certificado.html">Certificados</a>
-<a href="jogo.html">Jogo</a>
-</nav>
+    <h1>Isabella Furman</h1>
+
+    <div class="sociais">
+      <img src="gato.png" alt="WhatsApp">
+      <img src="brilha.png" alt="Facebook">
+      <img src="flor.png" alt="Instagram">
+    </div>
+
+  </div>
+
+  <!-- Menu de navegação -->
+  <nav class="menu">
+    <a href="index.html">Inicial</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+    <a href="certificado.html">Certificados</a>
+    <a href="jogo.html">Jogo</a>
+  </nav>
 </header>
 
-<!-- Banner principal da página -->
+<!-- Conteúdo principal da página -->
 <main>
-<section class="banner">
-<img src="paragrafo_1_banner.jpg" alt="Banner">
-</section>
 
-<!-- Seção com fotos das minhas pessoas favoritas -->
-<section class="pessoas">
-<h2>Minhas pessoas favoritas!</h2>
+  <!-- Banner principal -->
+  <section class="banner">
+    <img src="paragrafo_1_banner.jpg" alt="Banner da página">
+  </section>
 
-<div class="cards">
+  <!-- Seção das minhas pessoas favoritas -->
+  <section class="pessoas">
 
-<!-- Foto minha com a Duda -->
-<article class="card">
-<img class="foto" src="imagem 8.jpeg" alt="Eu e Duda">
-<h3>Eu e Duda</h3>
-</article>
+    <h2 class="pessoas-titulo">Minhas pessoas favoritas!</h2>
 
-<!-- Foto das amigas -->
-<article class="card">
-<img class="foto" src="imagem 7.jpeg" alt="As migas 2">
-<h3>As migas 2</h3>
-</article>
+    <div class="cards">
 
-<!-- Foto do Edu e da Mary -->
-<article class="card">
-<img class="foto" src="imagem 10.jpeg" alt="Edu e Mary">
-<h3>Edu e Mary</h3>
-</article>
+      <!-- Foto minha com a Duda -->
+      <div class="card">
+        <img class="foto" src="imagem 8.jpeg" alt="Eu e Duda">
+        <h3>Eu e Duda</h3>
+      </div>
 
-</div>
-</section>
+      <!-- Foto das amigas -->
+      <div class="card">
+        <img class="foto" src="imagem 7.jpeg" alt="As migas 2">
+        <h3>As migas 2</h3>
+      </div>
+
+      <!-- Foto do Edu e da Mary -->
+      <div class="card">
+        <img class="foto" src="imagem 10.jpeg" alt="Edu e Mary">
+        <h3>Edu e Mary</h3>
+      </div>
+
+      <!-- Foto nova 1 -->
+      <div class="card">
+        <img class="foto" src="foto-nova-1.jpeg" alt="Minha foto de infância">
+        <h3>Minha infância</h3>
+      </div>
+
+      <!-- Foto nova 2 -->
+      <div class="card">
+        <img class="foto" src="foto-nova-2.jpeg" alt="Foto com minha amiga">
+        <h3>Eu e minha amiga</h3>
+      </div>
+
+    </div>
+  </section>
+
 </main>
 
-<!-- Rodapé da página -->
+<!--Rodapé da página -->
 <footer>
-<img class="logo-footer" src="mulher.png" alt="Logo">
 
-<h2>Mais informações entre em contato</h2>
+  <img class="logo-footer" src="mulher.png" alt="Logo da página">
 
-<a href="https://wa.me/5541999999999">41 9.9999-9999</a>
+  <h2>Mais informações entre em contato</h2>
 
-<p>©2024 | Curso de ADS | Todos os Direitos Reservados.</p>
-<p>Política de Privacidade | Proteção de dados</p>
+  <a href="https://wa.me/5541999999999">
+    41 9.9999-9999
+  </a>
+
+  <p>©2024 | Curso de ADS | Todos os Direitos Reservados.</p>
+
+  <p>Política de Privacidade | Proteção de dados</p>
+
 </footer>
 
 </body>
 </html>
-
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meus Certificados</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 30px 20px;
-      font-family: Arial, sans-serif;
-      background: #f4f6f9;
-      color: #26374a;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-
-    .descricao {
-      text-align: center;
-      margin-bottom: 35px;
-      color: #586779;
-    }
-
-    .certificados {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .card {
-      background: white;
-      padding: 15px;
-      border-radius: 12px;
-      box-shadow: 0 4px 14px #00000012;
-    }
-
-    .card img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: 6px;
-      cursor: zoom-in;
-    }
-
-    .card h2 {
-      font-size: 17px;
-      line-height: 1.4;
-      margin-bottom: 0;
-    }
-
-    .card a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .card a:hover h2 {
-      color: #167b9b;
-    }
-  </style>
-</head>
